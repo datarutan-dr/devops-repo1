@@ -31,3 +31,20 @@ Beskrivningen skrivs på engelska som en uppmaning, med liten bokstav: add, inte
 ! betyder att ändringen bryter något (breaking change): den som använder systemet måste ändra något hos sig.
 ===
 Att docs: inte påverkar versionen är inte en lucka. Ett versionsnummer beskriver vad som händer för den som använder systemet, och en dokumentationsändring gör ingenting med dem.
+
+===
+===
+MAJOR.MINOR.PATCH
+varje tal säger vilken sorts förändring som skett. Branchen säger "semver".
+
+----
+PATCH: man öker siffran i PATCH när man gjort en rättning i koden. Men systemet har inte ändrats.
+
+MINOR:när man lägger till nya funktioner eller markerar föråldrad kod. PATCH återställs till 0.  X.X.0
+
+MAJOR: man ökar den om man gör en större ändring som gör att bakåtkompabiblioteten. Befintlig kod kan sluta fungera. 
+MINOR & PATCH ställs till 0   tex: 2.0.0
+----
+
+===
+===
