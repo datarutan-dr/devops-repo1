@@ -5,7 +5,7 @@ Vilken strategi du valt, och varför den passar ditt projekt. Tre till fem menin
 Man använder "Korta grenar mot huvudgrenen" 
 Man kallar det här: trunk-based development. 
 Trunk är stammen, alltså huvudgrenen.
-Under kursen så skal vi använda korta grenar mot huvudgrenen.
+Under kursen så skall vi använda korta grenar mot huvudgrenen.
 
 
 ## Branch protection
