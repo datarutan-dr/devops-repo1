@@ -8,7 +8,9 @@ desktop.ini
 # Editors
 .vscode/
 .idea/
-*.swpnode_modules/
+*.swp
+
+node_modules/
 *.db
 *.db-shm
 *.db-wal
@@ -16,7 +18,6 @@ desktop.ini
 # Build output: the deployment zip (module 04) and anything else a build makes.
 # Kept in one folder, so the repo's root stays clean, and never committed.
 artifacts/
-node_modules/
 
 # Written by the deploy script (module 05) into the zip, never committed.
 src/commit.txt
