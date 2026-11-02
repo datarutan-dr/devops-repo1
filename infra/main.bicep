@@ -34,5 +34,3 @@ module appService 'modules/app-service.bicep' = {
 
 output appServiceUrl string = appService.outputs.appServiceUrl
 
-
-
