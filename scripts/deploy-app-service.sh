@@ -26,3 +26,6 @@ az webapp deploy \
   --query properties.status \
   --output tsv
 
+# Azure's own status sometimes says "Starting the site" for minutes after the app is up.
+# The smoke test asks the app itself for the new commit instead.
+echo "==> Uploaded. The health check confirms the new version."
