@@ -55,16 +55,6 @@ module appService 'modules/app-service.bicep' = {
   }
 }
 
-module appService 'modules/app-service.bicep' = {
-  name: 'app-service'
-  params: {
-    location: location
-    appName: appName
-    appServicePlanId: appServicePlan.outputs.appServicePlanId
-    linuxFxVersion: linuxFxVersion
-    workspaceId: logAnalytics.outputs.workspaceId
-  }
-}
 
 output appServiceUrl string = appService.outputs.appServiceUrl
 output registryLoginServer string = containerRegistry.outputs.loginServer
