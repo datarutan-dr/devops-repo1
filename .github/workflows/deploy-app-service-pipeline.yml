@@ -30,6 +30,8 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Deploy to App Service
+        env:
+          ALERT_EMAIL: ${{ vars.ALERT_EMAIL }}
         run: ./scripts/deploy-app-service.sh "$AZURE_APP_NAME" "$AZURE_RESOURCE_GROUP"
 
       - name: Run the Smoke Test
